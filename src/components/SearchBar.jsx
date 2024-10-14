@@ -5,22 +5,10 @@ const SearchBar = ({ query, setQuery, courseFilter, setCourseFilter, minDate, se
     <div>
       <input 
         type="text" 
-        placeholder="Filter by Last Name, First Name, or Course" 
+        placeholder="Filter by Last Name, First Name, Age, or Course" 
         value={query} 
         onChange={(e) => setQuery(e.target.value)} 
       />
-      <div>
-        <label>
-          Course:
-          <select value={courseFilter} onChange={(e) => setCourseFilter(e.target.value)}>
-            <option value="">All</option>
-            <option value="IT">IT</option>
-            <option value="IS">IS</option>
-            <option value="CS">CS</option>
-            <option value="DS">DS</option>
-          </select>
-        </label>
-      </div>
       <div>
         <label>
           Min Birthdate:
